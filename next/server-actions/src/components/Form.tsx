@@ -4,7 +4,7 @@ import { revalidatePath } from "next/cache";
 import { NextResponse } from "next/server";
 
 const Form = () => {
-  const postData = async (formData: FormData) => {
+  const postData =  (formData: FormData) => {
     "use server";
     const id = randomUUID();
     const data = formData.get("data") as string;

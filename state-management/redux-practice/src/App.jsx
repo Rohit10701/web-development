@@ -7,7 +7,7 @@ export default function App() {
 
   return (
     <div>
-      <div>
+      <div className=''>
         <button
           aria-label="Increment value"
           onClick={() => dispatch(increment())}
@@ -26,6 +26,13 @@ export default function App() {
         >
           by value
         </button>
+        {/* <button
+          onClick={() => dispatch(() => {
+            console.log("some data from api")
+          })}
+        >
+          by value
+        </button> */}
       </div>
     </div>
   )
